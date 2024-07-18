@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+            position: relative;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #575757;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #333;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" onclick="location.href='index.html'" width="50">
+        <nav>
+            <a href="index.html">Kreu</a>
+            <div class="dropdown">
+                <a href="#">Video</a>
+                <div class="dropdown-content">
+                    <a href="#">Kategoria 1</a>
+                    <a href="#">Kategoria 2</a>
+                    <a href="#">Kategoria 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Sport</a>
+                <div class="dropdown-content">
+                    <a href="#">Kategoria 1</a>
+                    <a href="#">Kategoria 2</a>
+                </div>
+            </div>
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="#">Drejtpërdrejt</a>
+        </nav>
+    </header>
+</body>
+</html>
